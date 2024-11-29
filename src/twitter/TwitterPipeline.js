@@ -638,6 +638,11 @@ async saveCookies() {
     }
   }
 
+  async getProfile() {
+    const profile = await this.scraper.getProfile(this.username);
+    return profile;
+  }
+
   async run() {
     const startTime = Date.now();
 

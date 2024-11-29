@@ -4,6 +4,7 @@
   "main": "",
   "type": "module",
   "scripts": {
+    "generate-virtuals": "node src/virtuals/GenerateCharacter.js",
     "twitter": "node src/twitter/index.js",
     "blog": "node src/blog/blogScrape.js",
     "character": "node src/character/GenerateCharacter.js",
@@ -24,6 +25,7 @@
     "dotenv": "^16.4.5",
     "fs": "^0.0.1-security",
     "inquirer": "^12.0.1",
+    "openai": "^4.73.1",
     "ora": "^8.1.0",
     "progress": "^2.0.3",
     "puppeteer-cluster": "^0.24.0",

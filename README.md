@@ -56,3 +56,17 @@ npm run finetune
 ```bash
 npm run finetune:test
 ```
+
+### Generate Virtuals Character Card
+https://whitepaper.virtuals.io/developer-documents/agent-contribution/contribute-to-cognitive-core#character-card-and-goal-samples
+
+Run this after Twitter Collection step 
+```bash
+npm run generate-virtuals -- username date 
+```
+
+Example: `npm run generate-virtuals -- pmarca 2024-11-29`
+Example without date: `npm run generate-virtuals -- pmarca`
+
+The generated character file will be in the `pipeline/[username]/[date]/character/character.json` directory.
+The generated tweet dataset file will be in `pipeline/[username]/[date]/raw/tweets.json`.
